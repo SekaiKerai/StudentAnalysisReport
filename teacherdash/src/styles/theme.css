@@ -1,0 +1,244 @@
+/* Table Styles */
+.marks-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  .marks-table th, .marks-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .marks-table th {
+    background-color: #f8fafc;
+    font-weight: 600;
+    color: #475569;
+  }
+  
+  .marks-table tr:hover {
+    background-color: #f8fafc;
+  }
+  
+  .marks-table .positive {
+    color: #10b981;
+    font-weight: 600;
+  }
+  
+  .marks-table .negative {
+    color: #ef4444;
+    font-weight: 600;
+  }
+  
+  .marks-table .neutral {
+    color: #64748b;
+  }
+  
+  .marks-table .current-term {
+    background-color: #f0fdf4;
+    font-weight: 500;
+  }
+  
+  /* Rating display */
+  .rating-display {
+    position: relative;
+    padding: 4px 0;
+  }
+  
+  .rating-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #dbeafe;
+    z-index: -1;
+    border-radius: 2px;
+  }
+  
+  /* Modal styles */
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 800px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #64748b;
+    font-size: 1.25rem;
+  }
+  
+  /* Form styles */
+  .marks-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-section {
+    background-color: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #475569;
+  }
+  
+  .form-group input, .form-group textarea {
+    padding: 0.75rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .submit-button, .cancel-button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .submit-button {
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+  }
+  
+  .submit-button:hover {
+    background-color: #4338ca;
+  }
+  
+  .cancel-button {
+    background-color: white;
+    color: #64748b;
+    border: 1px solid #e2e8f0;
+  }
+  
+  .cancel-button:hover {
+    background-color: #f8fafc;
+  }
+  
+  /* Add marks button */
+  .add-marks-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    height: fit-content;
+    margin-left: auto;
+  }
+  
+  .add-marks-button:hover {
+    background-color: #4338ca;
+  }
+  
+  .student-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* React tabs customization */
+  .react-tabs__tab-list {
+    border-bottom: 1px solid #e2e8f0;
+    margin: 0 0 1rem;
+    padding: 0;
+  }
+  
+  .react-tabs__tab {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-bottom: none;
+    bottom: -1px;
+    position: relative;
+    list-style: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    color: #64748b;
+    font-weight: 500;
+  }
+  
+  .react-tabs__tab--selected {
+    background: white;
+    border-color: #e2e8f0;
+    color: #4f46e5;
+    border-radius: 6px 6px 0 0;
+    border-bottom: 2px solid #4f46e5;
+  }
+  
+  .react-tabs__tab:focus:after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    left: -4px;
+    right: -4px;
+    bottom: -1px;
+    background: #4f46e5;
+  }

@@ -1,0 +1,126 @@
+body{
+  background-color: #ebf6f9;
+}
+.academic-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  color: var(--dark);
+}
+
+.chart-container {
+  width: 100%;
+  height: 300px;
+
+  border-radius: 12px;
+  
+}
+
+.performance-table {
+  width: 100%;
+  color: black;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 2fr 1fr;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #eee;
+  font-weight: 600;
+  color: black;
+  font-style: bold;
+  text-align: center;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr 1fr;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+}
+
+.card span{
+  text-align: center;
+}
+
+.card #subject, .table-row span{
+  text-align: left;
+}
+
+
+.grade {
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+.grade.a {
+  background-color: #d4edda;
+ width: 60px;
+   text-align: center;
+  color: #155724;
+}
+
+.grade.b-plus {
+  background-color: #fff3cd;
+   width: 60px;
+   text-align: center;
+  color: #856404;
+}
+
+.grade.a-minus {
+  background-color: #cce5ff;
+   width: 60px;
+   text-align: center;
+  color: #004085;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 8px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: var(--primary);
+  border-radius: 4px;
+}
+
+.progress-value {
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+
+.trend {
+  font-weight: bold;
+}
+
+.trend.up {
+  color: var(--success);
+}
+
+.trend.down {
+  color: var(--danger);
+}
+
+.trend.steady {
+  color: var(--warning);
+}

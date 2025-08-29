@@ -1,0 +1,37 @@
+.error-boundary {
+    padding: 20px;
+    border: 1px solid var(--danger);
+    border-radius: 8px;
+    background-color: rgba(239, 35, 60, 0.1);
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .error-details {
+    margin: 15px 0;
+    color: var(--danger);
+  }
+  
+  .error-details summary {
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .error-details pre {
+    white-space: pre-wrap;
+    font-size: 0.8em;
+  }
+  
+  .retry-button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .retry-button:hover {
+    background-color: var(--primary-dark);
+  }

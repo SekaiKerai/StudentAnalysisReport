@@ -1,0 +1,35 @@
+/* MultipleFiles/TextToSpeechButton.css */
+.tts-button {
+    background-color: #212ea0;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.tts-button:hover {
+    background-color: #1a258f;
+}
+
+.tts-button.speaking {
+    background-color: #28a745; /* Green when speaking */
+}
+
+.tts-button.speaking:hover {
+    background-color: #218838;
+}
+
+.tts-button.paused {
+    background-color: #ffc107; /* Yellow when paused */
+    color: #333;
+}
+
+.tts-button.paused:hover {
+    background-color: #e0a800;
+}

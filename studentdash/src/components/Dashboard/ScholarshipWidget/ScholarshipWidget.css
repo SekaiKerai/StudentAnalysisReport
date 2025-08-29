@@ -1,0 +1,151 @@
+.scholarship-widget {
+  margin-bottom: 2rem;
+}
+
+.widget-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.status-badge {
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.status-badge.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.widget-content {
+  margin-bottom: 1.5rem;
+}
+
+.progress-tracker {
+ 
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  position: relative;
+  
+}
+
+.progress-tracker::before {
+   margin: 10%;
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #e9ecef00;
+  z-index: 1;
+}
+
+.progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.step-marker {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #e9ecef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.progress-step.completed .step-marker,
+.progress-step.active .step-marker {
+  background-color: var(--primary);
+  color: white;
+}
+
+
+
+.progress-step span {
+  font-size: 0.8rem;
+  color: black;
+  font-style: bold;
+}
+
+/* Modal Styles */
+.scholarship-modal {
+  max-width: 500px;
+  width: 90%;
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  position: relative;
+  margin: 2rem auto;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  padding: 1rem;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.documents-list {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.document-tag {
+  background-color: #f1f1f1;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.status-text {
+  font-weight: 600;
+}
+
+.status-text.pending {
+  color: #ffc107;
+}
+.btn-outline {
+  background: none;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}

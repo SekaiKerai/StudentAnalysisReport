@@ -1,0 +1,124 @@
+/* --- General Section Styling --- */
+.donate-section {
+  max-width: 480px;
+  margin: 60px auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+  color: #333;
+  text-align: center; /* Center align the text */
+}
+
+.donate-section h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #000f38;
+  margin-bottom: 1rem;
+}
+
+.donate-section p {
+  color: #676767;
+  margin-bottom: 2rem;
+}
+
+/* --- Form Styling --- */
+.donate-form {
+  text-align: left; /* Reset text alignment for the form */
+}
+
+/* --- Input Group Styling --- */
+.donate-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  color: #676767;
+}
+
+.donate-form input[type="number"] {
+  width: 100%;
+  background: #ebecfe;
+  padding: 14px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 1.6rem;
+}
+
+.donate-form input[type="number"]:focus {
+  background-color: #e0e1fc;
+}
+
+/* --- Frequency Options Styling --- */
+.frequency-options {
+  display: flex;
+  gap: 20px;
+  margin-top: 0.5rem;
+  margin-bottom: 1.6rem;
+  align-items: center;
+}
+
+.frequency-options label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #333;
+}
+
+.frequency-options input[type="radio"] {
+  margin-right: 8px;
+  /* Custom radio button styles can be added here */
+}
+
+/* --- Button Styling --- */
+.btn {
+  padding: 14px;
+  font-size: 1rem;
+  background-color: #212ea0;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.4s ease;
+}
+
+.btn:hover {
+  background-color: #0d1b77;
+}
+
+/* --- Thank You Message --- */
+.thank-you {
+  background-color: #e0ffe0;
+  color: #006400;
+  padding: 12px;
+  margin-top: 1.5rem;
+  border-left: 4px solid #006400;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 600px) {
+  .donate-section {
+    margin: 40px 1rem;
+    padding: 1.5rem;
+  }
+
+  .donate-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .btn {
+    font-size: 0.95rem;
+  }
+
+  .frequency-options {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

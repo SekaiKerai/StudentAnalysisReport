@@ -1,0 +1,81 @@
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .profile-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .profile-icon {
+    font-size: 1.2rem;
+  }
+  
+  .dropdown-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  .dropdown-icon.open {
+    transform: rotate(180deg);
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 250px;
+    z-index: 100;
+    padding: 1rem;
+    color: var(--dark);
+  }
+  
+  .dropdown-header {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1rem;
+  }
+  
+  .dropdown-header h3 {
+    margin: 0 0 0.5rem;
+  }
+  
+  .dropdown-header p {
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+    color: var(--gray);
+  }
+  
+  .dropdown-section {
+    margin-bottom: 1rem;
+  }
+  
+  .dropdown-section h4 {
+    margin: 0 0 0.5rem;
+    font-size: 0.9rem;
+    color: var(--gray);
+  }
+  
+  .dropdown-item {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0.5rem 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .dropdown-item:hover {
+    color: var(--primary);
+  }

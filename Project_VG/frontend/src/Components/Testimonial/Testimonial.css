@@ -1,0 +1,105 @@
+.testimonials {
+  margin: 80px auto;
+  padding: 0 80px;
+  position: relative;
+}
+.next-btn,
+.back-btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%); /* Corrected from translate(-50%) for vertical centering */
+  padding: 15px;
+  width: 50px;
+  height: 50px; /* Added height for a perfect circle button */
+  border-radius: 50%;
+  cursor: pointer;
+  background: #212ea0;
+  display: flex; /* To center the arrow image inside */
+  align-items: center;
+  justify-content: center;
+}
+.back-btn {
+  right: auto;
+  left: 0;
+}
+.slider {
+  overflow: hidden;
+}
+.slider ul {
+  display: flex;
+  width: 200%;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.slider ul li {
+  list-style: none;
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box; /* Good practice to add this */
+}
+.slide {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+  border-radius: 10px;
+  color: #746f6f;
+  line-height: 1.4;
+}
+
+/* --- THIS IS THE CORRECTED STYLE --- */
+.slide img {
+  width: 65px;
+  height: 65px; /* <-- ADD THIS to make it a square */
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 4px solid #212ea0;
+  object-fit: cover; /* <-- ADD THIS to prevent stretching */
+}
+
+.userinfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+.userinfo h3 {
+  color: #212ea0;
+}
+
+/* --- Media Queries --- */
+@media (max-width: 800px) {
+  .testimonials {
+    padding: 0 40px;
+  }
+  .next-btn,
+  .back-btn {
+    padding: 10px;
+    width: 35px; /* Adjusted for better proportions */
+    height: 35px;
+  }
+  .testimonials ul li {
+    padding: 10px;
+  }
+  .slide {
+    padding: 20px; /* Increased slightly for better spacing */
+  }
+  .slide img {
+    width: 50px;
+    height: 50px; /* Keep it square */
+    border: 3px solid #212ea0;
+  }
+}
+
+@media (max-width: 600px) {
+  .userinfo {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  .userinfo h3 {
+    font-size: 16px;
+  }
+  .slide p { /* Corrected from .slider p */
+    font-size: 12px;
+  }
+}
